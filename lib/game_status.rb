@@ -21,7 +21,7 @@ def won?(board)
     windex_2=combo[1]
     windex_3=combo[2]
     if(position_taken?(board[windex_1]))
-      if(board[windex_1]==board[windex_2] and board[windex_2]==board[windex_3])
+      if(board[windex_1]==board[windex_2] && board[windex_2]==board[windex_3])
         return combo
       else
         false
