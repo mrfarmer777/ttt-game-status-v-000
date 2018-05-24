@@ -14,3 +14,15 @@ WIN_COMBINATIONS=[
   [0,4,8],
   [2,4,6]
 ]
+
+def won?(board)
+  for combo in WIN_COMBINATIONS
+    windex_1=combo[0]
+    windex_2=combo[1]
+    windex_3=combo[2]
+    if(board[windex_1]==board[windex_2] and board[windex_2]==board[windex_3])
+      return combo
+    else
+      false
+    end
+  end
