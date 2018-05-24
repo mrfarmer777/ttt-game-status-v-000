@@ -16,7 +16,7 @@ WIN_COMBINATIONS=[
 ]
 
 def won?(board)
-  for combo in WIN_COMBINATIONS
+  for combo in WIN_COMBINATIONS do
     windex_1=combo[0]
     windex_2=combo[1]
     windex_3=combo[2]
